@@ -261,7 +261,12 @@ setInterval(() => {
 
 
 // ================= HAMBURGER MENU =================
-function toggleMenu() {
+// ================= HAMBURGER MENU (GLOBAL) =================
+window.toggleMenu = function () {
   const nav = document.getElementById("navMenu");
+  if (!nav) {
+    console.error("navMenu not found");
+    return;
+  }
   nav.classList.toggle("active");
-}
+};
