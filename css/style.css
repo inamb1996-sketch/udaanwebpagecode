@@ -1169,3 +1169,17 @@ footer {
     font-size: 13px;
   }
 }
+
+/* ================= NOTICE BAR OVERLAP FIX ================= */
+
+/* Notice bar ki height = ~36px, isliye body ko space do */
+body {
+  padding-top: 36px;
+}
+
+/* Mobile pe thoda kam height hoti hai */
+@media (max-width: 768px) {
+  body {
+    padding-top: 32px;
+  }
+}
