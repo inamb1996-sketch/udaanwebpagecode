@@ -270,3 +270,13 @@ window.toggleMenu = function () {
   }
   nav.classList.toggle("active");
 };
+
+// ================= AUTO CLOSE MENU ON CLICK =================
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    const nav = document.getElementById("navMenu");
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+    }
+  });
+});
