@@ -1183,3 +1183,78 @@ body {
     padding-top: 32px;
   }
 }
+
+/* ================= NOTICE + NAVBAR FIX ================= */
+
+.notice-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: #b74040;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+/* Navbar notice ke neeche rahe */
+.navbar {
+  position: fixed;
+  top: 36px;              /* 👈 NOTICE BAR HEIGHT */
+  left: 0;
+  width: 100%;
+  background: #0b1c2d;
+  z-index: 2500;
+}
+
+/* Body ko dono ke liye space do */
+body {
+  padding-top: 110px;    /* notice + navbar height */
+}
+
+/* ================= MOBILE NAVBAR ================= */
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}

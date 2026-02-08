@@ -258,3 +258,10 @@ setInterval(() => {
   testimonialIndex = (testimonialIndex + 1) % testimonials.length;
   testimonials[testimonialIndex].classList.add("active");
 }, 3000); // 3 seconds
+
+
+// ================= HAMBURGER MENU =================
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
