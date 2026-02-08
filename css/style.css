@@ -1258,3 +1258,32 @@ body {
     align-items: center;
   }
 }
+
+
+.course-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+}
+
+.course-modal-content {
+  background: #aaf147;
+  padding: 25px;
+  width: 90%;
+  max-width: 520px;
+  border-radius: 14px;
+  position: relative;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  cursor: pointer;
+}

@@ -554,3 +554,290 @@ document.querySelectorAll("#navMenu a").forEach(link => {
     }
   });
 });
+
+// ================= COURSE DETAILS DATA =================
+// ================= COURSE DETAILS DATA =================
+// ================= COMPLETE COURSE DETAILS =================
+const courseDetails = {
+
+  "basic-computer": {
+    title: "Basic Computer Course",
+    duration: "3 Months",
+    fees: "₹2500 – ₹3500",
+    syllabus: [
+      "Computer fundamentals",
+      "Windows operating system",
+      "File & Folder handling",
+      "Typing practice (Hindi + English)",
+      "Internet & Email usage"
+    ],
+    note: "Beginners, school students, housewives aur elders ke liye perfect course."
+  },
+
+  "ms-office": {
+    title: "MS Office Course",
+    duration: "3–4 Months",
+    fees: "₹3000 – ₹4500",
+    syllabus: [
+      "MS Word – letters, documents",
+      "MS Excel – formulas & reports",
+      "MS PowerPoint – presentations",
+      "Office practical work"
+    ],
+    note: "Private job, office work aur competitive exams ke liye useful."
+  },
+
+  "excel": {
+    title: "Excel Course",
+    duration: "2 Months",
+    fees: "₹2000 – ₹3000",
+    syllabus: [
+      "Excel basics",
+      "Formulas & functions",
+      "Charts & tables",
+      "Practical exercises"
+    ],
+    note: "Office, accounting aur data handling ke liye important skill."
+  },
+
+  "advanced-excel": {
+    title: "Advanced Excel Course",
+    duration: "2–3 Months",
+    fees: "₹3500 – ₹5000",
+    syllabus: [
+      "Advanced formulas",
+      "Pivot tables",
+      "Dashboard & MIS reports",
+      "Real business data practice"
+    ],
+    note: "Job-oriented course, corporate demand zyada hai."
+  },
+
+  "tally": {
+    title: "Tally ERP 9 with GST",
+    duration: "4–6 Months",
+    fees: "₹6000 – ₹9000",
+    syllabus: [
+      "Accounting basics",
+      "Tally ERP 9 software",
+      "GST – CGST, SGST, IGST",
+      "Invoice & return filing"
+    ],
+    note: "Accounts job, CA office aur shop billing ke liye best course."
+  },
+
+  "digital-marketing": {
+    title: "Digital Marketing Course",
+    duration: "3–4 Months",
+    fees: "₹5000 – ₹8000",
+    syllabus: [
+      "Digital marketing fundamentals",
+      "Social media marketing",
+      "Facebook & Instagram ads",
+      "SEO basics"
+    ],
+    note: "Online earning, freelancing aur business growth ke liye."
+  },
+
+  "coding": {
+    title: "Coding Fundamentals",
+    duration: "3 Months",
+    fees: "₹4000 – ₹6000",
+    syllabus: [
+      "Programming logic",
+      "HTML, CSS basics",
+      "JavaScript introduction",
+      "Mini projects"
+    ],
+    note: "School students aur beginners ke liye coding foundation."
+  },
+
+  "sql": {
+    title: "SQL Database Course",
+    duration: "2 Months",
+    fees: "₹3000 – ₹4500",
+    syllabus: [
+      "Database concepts",
+      "SQL queries",
+      "Data insert, update, delete",
+      "Practical database tasks"
+    ],
+    note: "IT, software aur data jobs ke liye useful."
+  },
+
+  "typing": {
+    title: "Typing Course (Hindi & English)",
+    duration: "2–3 Months",
+    fees: "₹1500 – ₹2500",
+    syllabus: [
+      "Hindi typing",
+      "English typing",
+      "Speed & accuracy practice",
+      "Exam-oriented typing"
+    ],
+    note: "Government exams aur office work ke liye essential."
+  },
+
+  "o-level": {
+    title: "O-Level (NIELIT)",
+    duration: "1 Year",
+    fees: "As per Government norms",
+    syllabus: [
+      "IT tools",
+      "Programming",
+      "Web technology",
+      "Theory & practical"
+    ],
+    note: "Government-recognized computer course with certificate."
+  },
+
+  "dbms": {
+    title: "DBMS Course",
+    duration: "2 Months",
+    fees: "₹3000 – ₹4000",
+    syllabus: [
+      "Database management system",
+      "DBMS models",
+      "Normalization",
+      "Practical examples"
+    ],
+    note: "BCA, MCA aur IT students ke liye important."
+  },
+
+  "python": {
+    title: "Python Programming",
+    duration: "3–4 Months",
+    fees: "₹5000 – ₹7000",
+    syllabus: [
+      "Python basics",
+      "Logic building",
+      "Functions & modules",
+      "Mini projects"
+    ],
+    note: "Programming aur automation ke liye popular language."
+  },
+
+  "python-ai": {
+    title: "Python with AI",
+    duration: "4–5 Months",
+    fees: "₹7000 – ₹10000",
+    syllabus: [
+      "Advanced Python",
+      "AI fundamentals",
+      "Machine learning intro",
+      "AI projects"
+    ],
+    note: "Future-ready AI career ke liye best choice."
+  },
+
+  "python-ds": {
+    title: "Python with Data Science",
+    duration: "4–5 Months",
+    fees: "₹8000 – ₹12000",
+    syllabus: [
+      "Data analysis with Python",
+      "Visualization",
+      "Real datasets",
+      "Practical projects"
+    ],
+    note: "Data analyst jobs ke liye high-demand course."
+  },
+
+  "chatgpt-ai": {
+    title: "AI with ChatGPT",
+    duration: "1–2 Months",
+    fees: "₹2500 – ₹4000",
+    syllabus: [
+      "AI tools overview",
+      "ChatGPT practical usage",
+      "Prompt engineering",
+      "Productivity automation"
+    ],
+    note: "Students, teachers aur business owners ke liye productivity booster."
+  },
+
+  "ai": {
+    title: "Artificial Intelligence",
+    duration: "4 Months",
+    fees: "₹7000 – ₹10000",
+    syllabus: [
+      "AI fundamentals",
+      "AI applications",
+      "Real-world use cases"
+    ],
+    note: "Future technology me interest rakhne walon ke liye."
+  },
+
+  "data-analysis": {
+    title: "Data Analysis Course",
+    duration: "3–4 Months",
+    fees: "₹6000 – ₹9000",
+    syllabus: [
+      "Data basics",
+      "Analysis techniques",
+      "Reports & insights"
+    ],
+    note: "Corporate aur analytics roles ke liye useful."
+  },
+
+  "chatbot": {
+    title: "Chatbot Development",
+    duration: "2–3 Months",
+    fees: "₹4000 – ₹6000",
+    syllabus: [
+      "Chatbot basics",
+      "Logic design",
+      "Chatbot creation"
+    ],
+    note: "Automation aur AI tools me interest walon ke liye."
+  }
+
+};
+
+
+
+// ================= COURSE MODAL LOGIC =================
+// ================= COURSE MODAL LOGIC =================
+document.addEventListener("DOMContentLoaded", () => {
+
+  console.log("✅ Course JS ready");
+
+  document.querySelectorAll(".course-card").forEach(card => {
+    card.addEventListener("click", () => {
+
+      const key = card.getAttribute("data-course");
+      console.log("Clicked:", key);
+      console.log("courseDetails:", courseDetails);
+
+      const data = courseDetails[key];
+
+      if (!data) {
+        alert("Course data not found for: " + key);
+        return;
+      }
+
+      document.getElementById("courseTitle").innerText = data.title;
+      document.getElementById("courseDuration").innerText = data.duration;
+      document.getElementById("courseFees").innerText = data.fees;
+
+      const list = document.getElementById("courseSyllabus");
+      list.innerHTML = "";
+      data.syllabus.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+      });
+
+      document.getElementById("courseNote").innerText = data.note;
+      document.getElementById("courseModal").style.display = "flex";
+    });
+  });
+
+});
+
+
+// ================= MODAL CLOSE =================
+window.closeCourseModal = function () {
+  document.getElementById("courseModal").style.display = "none";
+};
+

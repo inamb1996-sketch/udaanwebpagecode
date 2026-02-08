@@ -132,31 +132,31 @@
 
   <!-- ================= COURSES ================= -->
   <section class="courses" id="courses">
-    <h2>Our Courses</h2>
-    <div class="course-grid">
-      <div class="course-card blue"><span>Basic Computer</span></div>
-<div class="course-card purple"><span>MS Office</span></div>
-<div class="course-card green"><span>Excel</span></div>
-<div class="course-card green"><span>Advanced Excel</span></div>
-<div class="course-card orange"><span>Tally ERP 9</span></div>
-<div class="course-card pink"><span>Digital Marketing</span></div>
-<div class="course-card red"><span>Coding</span></div>
-<div class="course-card teal"><span>SQL</span></div>
-<div class="course-card brown"><span>Typing</span></div>
-<div class="course-card indigo"><span>O-Level</span></div>
-<div class="course-card cyan"><span>DBMS</span></div>
-<div class="course-card yellow"><span>Python</span></div>
-<div class="course-card violet"><span>Python With AI</span></div>
-<div class="course-card violet"><span>Python With Data Science</span></div>
-<div class="course-card black"><span>AI With ChatGPT</span></div>
-<div class="course-card black"><span>AI</span></div>
-<div class="course-card black"><span>Data Analysis</span></div>
-<div class="course-card black"><span>Chatbot</span></div>
+  <h2>Our Courses</h2>
 
+  <div class="course-grid">
 
-      </div>
-    </div>
-  </section>
+    <div class="course-card blue" data-course="basic-computer"><span>Basic Computer</span></div>
+    <div class="course-card purple" data-course="ms-office"><span>MS Office</span></div>
+    <div class="course-card green" data-course="excel"><span>Excel</span></div>
+    <div class="course-card green" data-course="advanced-excel"><span>Advanced Excel</span></div>
+    <div class="course-card orange" data-course="tally"><span>Tally ERP 9</span></div>
+    <div class="course-card pink" data-course="digital-marketing"><span>Digital Marketing</span></div>
+    <div class="course-card red" data-course="coding"><span>Coding</span></div>
+    <div class="course-card teal" data-course="sql"><span>SQL</span></div>
+    <div class="course-card brown" data-course="typing"><span>Typing</span></div>
+    <div class="course-card indigo" data-course="o-level"><span>O-Level</span></div>
+    <div class="course-card cyan" data-course="dbms"><span>DBMS</span></div>
+    <div class="course-card yellow" data-course="python"><span>Python</span></div>
+    <div class="course-card violet" data-course="python-ai"><span>Python With AI</span></div>
+    <div class="course-card violet" data-course="python-ds"><span>Python With Data Science</span></div>
+    <div class="course-card black" data-course="chatgpt-ai"><span>AI With ChatGPT</span></div>
+    <div class="course-card black" data-course="ai"><span>AI</span></div>
+    <div class="course-card black" data-course="data-analysis"><span>Data Analysis</span></div>
+    <div class="course-card black" data-course="chatbot"><span>Chatbot</span></div>
+
+  </div>
+</section>
 
 
 <!-- ================= WHY UDAAN ================= -->
@@ -550,6 +550,24 @@
   <span class="wa-text">WhatsApp Now</span>
 </a>
 
+<!-- ================= COURSE DETAIL MODAL ================= -->
+<div id="courseModal" class="course-modal" style="display:none;">
+  <div class="course-modal-content">
+
+    <span class="close-btn" onclick="closeCourseModal()">✖</span>
+
+    <h2 id="courseTitle"></h2>
+
+    <p><strong>Duration:</strong> <span id="courseDuration"></span></p>
+    <p><strong>Fees:</strong> <span id="courseFees"></span></p>
+
+    <h3>What you will learn</h3>
+    <ul id="courseSyllabus"></ul>
+
+    <p id="courseNote" class="course-note"></p>
+
+  </div>
+</div>
 
 
 </body>
