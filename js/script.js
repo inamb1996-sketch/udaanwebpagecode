@@ -829,7 +829,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       document.getElementById("courseNote").innerText = data.note;
+     
+
+document.getElementById("enrollBtn").href = waLink;
+
       document.getElementById("courseModal").style.display = "flex";
+       // 🔥 Enroll Now WhatsApp link
+// 🔥 Enroll Now WhatsApp link
+const enrollBtn = document.getElementById("enrollBtn");
+
+const phoneNumber = "918604409418"; // tumhara WhatsApp number
+const message = `Hello Udaan Digital Center,%0A%0AI want to enroll in *${data.title}* course.%0APlease share details about fees, duration and next batch.`;
+
+enrollBtn.href = `https://wa.me/${phoneNumber}?text=${message}`;
+
+      
+      
     });
   });
 
@@ -841,3 +856,58 @@ window.closeCourseModal = function () {
   document.getElementById("courseModal").style.display = "none";
 };
 
+/* ================= COURSE POPUP (CLEAN & ISOLATED) ================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  console.log("✅ Course popup JS loaded");
+
+  const modal = document.getElementById("courseModal");
+  const titleEl = document.getElementById("courseTitle");
+  const durationEl = document.getElementById("courseDuration");
+  const feesEl = document.getElementById("courseFees");
+  const syllabusEl = document.getElementById("courseSyllabus");
+  const noteEl = document.getElementById("courseNote");
+  const enrollBtn = document.getElementById("enrollBtn");
+
+  document.querySelectorAll(".course-card").forEach(card => {
+    card.addEventListener("click", () => {
+
+      const key = card.dataset.course;
+      console.log("Clicked:", key);
+
+      const data = courseDetails[key];
+      if (!data) {
+        alert("Course data not found for: " + key);
+        return;
+      }
+
+      // Fill data
+      titleEl.innerText = data.title;
+      durationEl.innerText = data.duration;
+      feesEl.innerText = data.fees;
+      noteEl.innerText = data.note;
+
+      syllabusEl.innerHTML = "";
+      data.syllabus.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        syllabusEl.appendChild(li);
+      });
+
+      // WhatsApp Enroll
+      const phone = "918604409418";
+      const msg = `Hello Udaan Digital Center,%0A%0AI want to enroll in *${data.title}* course.%0APlease share details.`;
+      enrollBtn.href = `https://wa.me/${phone}?text=${msg}`;
+
+      // SHOW MODAL (MOST IMPORTANT LINE)
+      modal.style.display = "flex";
+    });
+  });
+
+});
+
+// Close popup
+window.closeCourseModal = function () {
+  document.getElementById("courseModal").style.display = "none";
+};
