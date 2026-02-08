@@ -510,7 +510,9 @@ window.closeMarksheet = function () {
 const heroImages = [
   "images/hero1.jpg",
   "images/hero2.jpg",
-  "images/hero3.jpg"
+  "images/hero3.jpg",
+  "images/hero4.jpg",
+  "images/hero5.jpg"
 ];
 
 let heroIndex = 0;
