@@ -444,8 +444,8 @@ footer {
 /* ================= STATS SECTION ================= */
 
 .stats {
-  background: linear-gradient(135deg, #0b1c2d, #1c2f4a);
-  color: #fff;
+  background: linear-gradient(135deg, #e2e176, #c1c668);
+  color: #0f0101;
   text-align: center;
 }
 
@@ -467,7 +467,7 @@ footer {
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(20, 5, 5, 0.08);
   backdrop-filter: blur(8px);
   padding: 35px 20px;
   border-radius: 18px;
@@ -476,7 +476,7 @@ footer {
 
 .stat-card h3 {
   font-size: 40px;
-  color: #f9a825;
+  color: #000000;
   margin-bottom: 8px;
 }
 
@@ -488,7 +488,7 @@ footer {
 
 .stat-card:hover {
   transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 40px rgba(10, 10, 10, 0.35);
 }
 
 
@@ -1398,4 +1398,59 @@ body {
   font-size: 14px;
   font-style: italic;
   color: #555;
+}
+
+/* ================= BOOK YOUR SEAT CTA ================= */
+
+.seat-offer {
+  background: linear-gradient(135deg, #0b1c2d, #1e3c72);
+  color: #fff;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.seat-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.offer-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.offer-text span {
+  color: #f9a825;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #25d366;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .seat-content h2 {
+    font-size: 28px;
+  }
+
+  .offer-text {
+    font-size: 16px;
+  }
 }
